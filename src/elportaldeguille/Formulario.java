@@ -31,33 +31,7 @@ public class Formulario extends javax.swing.JFrame {
     }
     
     public void expNombre() {
-        if (jTextNombre.getText().matches("[a-zA-Z]{25}") && 
-                jTextApellidos.getText().matches("[a-zA-Z]{15} [a-zA-Z]{15}") &&
-                jTextEdad.getText().matches("[0-9]{2}") &&
-                jTextCiudad.getText().matches("[a-zA-Z]{25}") &&
-                jTextProvincia.getText().matches("[a-zA-Z]{25}") &&
-                jTextPais.getText().matches("[a-zA-Z]{25}") &&
-                jTextCP.getText().matches("[0-9]{5}") &&
-                jTextNomUsuario.getText().matches("[a-zA-Z0-9]{32}")) {
-            jTextNombre.setText(jTextNombre.getText());
-            jTextApellidos.setText(jTextApellidos.getText());
-            jTextEdad.setText(jTextEdad.getText());
-            jTextCiudad.setText(jTextCiudad.getText());
-            jTextProvincia.setText(jTextProvincia.getText());
-            jTextPais.setText(jTextPais.getText());
-            jTextCP.setText(jTextCP.getName());
-            jTextNomUsuario.setText(jTextNomUsuario.getText());
-        } else {
-            int opcion = JOptionPane.showConfirmDialog(null, "HOLA", "Error", 0);
-            jTextNombre.setText(Integer.toString(opcion)); 
-            jTextApellidos.setText(Integer.toString(opcion));
-            jTextEdad.setText(Integer.toString(opcion));
-            jTextCiudad.setText(Integer.toString(opcion));
-            jTextProvincia.setText(Integer.toString(opcion));
-            
-            
-                    
-        }
+    
     }
     /**
      * This method is called from within the constructor to initialize the form.
